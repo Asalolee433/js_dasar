@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //1.
+    // let batasAwal = parseInt(prompt("Masukkan batas awal:"));
+    // let batasAkhir = parseInt(prompt("Masukkan batas akhir:"));
+    // let jumlah = 0;
+    // for (let i = batasAwal; i <= batasAkhir; i++) {
+    // if (i % 2 !== 0) {
+    // jumlah++;
+    // }
+    // }
+    // console.log("Banyaknya bilangan ganjil = " + jumlah);
+    // 2.
+    // let batasAwal = Number(prompt("masukkan angka batasAwal"));
+    // let batasAkhir = Number(prompt("masukkan angka batasAkhir"));
+    // let i = batasAwal;
+    // let jumlah = 0;
+    // while(i <= batasAkhir){
+    // if(i % 2 !== 0){
+    // jumlah += i;
+    // }
+    // i++;
+    // }
+    // console.info("jumlah deret bilangan ganjil = " + jumlah); 
+    //3.
+    // let n = parseInt(prompt("masukkan bilangan"));
+    // let total = 0;
+    // for(let i = 1; i <= n; i++){
+    //     let angka = (parseFloat(prompt("Masukkan Bilangan ke-" + i + ":")));
+    //     total += angka;
+    //   }
+    //   let rata = total /n;
+    //   console.info("Total Dari bilangan" + n + "adalah" + rata);
+    //4.
+    let pilihan;
+      do{
+        pilihan = prompt("masukkan pilihan");
+        if(pilihan == "1"){
+            let alas = Number(prompt("masukkan alas segitiga :"));
+            let tinggi = Number(prompt("masukkan tinggi segitiga :"));
+            let luas = 0.5 * alas * tinggi;
+
+            console.log("luas segitiga = " + alas);
+        } else if (pilihan == "2") {
+            let panjang = Number(prompt("masukkan panjang persegi panjang"));
+            let lebar = Number(prompt("masukkan lebar persegi panjang"));
+            let luas = panjang * lebar;
+            console.log("luas persegi panjang = " + luas);
+        }
+      } while (pilihan != "3");
+    </script>
+</body>
+</html>
